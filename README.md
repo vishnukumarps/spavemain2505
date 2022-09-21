@@ -14,4 +14,8 @@ step 1
  step 4
  Follow thw steps in "SPAVEMAIN_2505_POC\spavemain2505\ScreenShots"
 
+ Test Institutionid
+  ins_130209   works fine
+  ins_13  Causing problem
+
  
