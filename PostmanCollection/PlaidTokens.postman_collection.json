@@ -1,0 +1,306 @@
+{
+	"info": {
+		"_postman_id": "c67a6bc2-0843-4be4-b253-1a1450d55559",
+		"name": "PlaidTokens",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17922324"
+	},
+	"item": [
+		{
+			"name": "createPublicToken",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"mobileNumber\": \"77361\",\r\n    \"institution_id\": \"ins_114252\",\r\n    \"initial_products\":[  \r\n           \"transactions\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/plaid/createPublicToken",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"plaid",
+						"createPublicToken"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createAcessToken",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"mobileNumber\":\"test1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/plaid/createAccessToken",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"plaid",
+						"createAccessToken"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "choosingAccountIdforProcessorToken",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"mobileNumber\":\"77361\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/plaid/choosingAccountIdforProcessorToken",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"plaid",
+						"choosingAccountIdforProcessorToken"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createProcessorToken",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "test",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"mobileNumber\":\"77361\",\r\n    \"chooseAccount\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/plaid/createProcessorToken",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"plaid",
+						"createProcessorToken"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "accountBalance",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"mobileNumber\":\"1234567896\",\r\n    \"chooseAccount\":0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/plaid/accountBalance",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"plaid",
+						"accountBalance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "InstitutionsGetRequest",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"mobileNumber\":\"1234567896\",\r\n    \"chooseAccount\":0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/plaid/institutionsGetRequest",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"plaid",
+						"institutionsGetRequest"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "authGetRequest",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"mobileNumber\":\"1234567896\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/plaid/authGetRequest",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"plaid",
+						"authGetRequest"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ItemGetRequest",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"mobileNumber\":\"45\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/plaid/ItemGetRequest",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"plaid",
+						"ItemGetRequest"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "InstitutionsGetByIdRequest",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"institution_id\":\"\",\r\n    \"country_codes\":[\"US\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/plaid/InstitutionsGetByIdRequest",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"plaid",
+						"InstitutionsGetByIdRequest"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ItemRemoveRequest",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"mobileNumber\":\"51\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/plaid/ItemRemoveRequest",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"plaid",
+						"ItemRemoveRequest"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

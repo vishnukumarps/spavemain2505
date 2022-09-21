@@ -98,8 +98,8 @@ const choosingAccountIdforProcessorToken = async (req, res) => {
 
 
 const createProcessorToken = async (req, res) => {
-  const tokens = await Token.findOne({ "mobileNumber": req.body.mobileNumber }).lean()
-  const account = await Account.findOne({ "mobileNumber": req.body.mobileNumber }).lean()
+  const tokens = await Token.findOne({ "mobileNumber": req.body.mobileNumber })
+  const account = await Account.findOne({ "mobileNumber": req.body.mobileNumber })
   try {
     console.log(" tokens ",tokens)
 
